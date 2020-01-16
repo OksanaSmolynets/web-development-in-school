@@ -6,152 +6,173 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <title>Web development in school</title>
+    <script src="index.js"></script>
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <header>
-        <div class="header-img">
-            <div class="header-text">
-                <h1>Let's enjoy <br> the website development process</h1>
-            </div>
-            <img src="img/business-2846221__340.webp" alt="" />
-        </div>
         <div class="header-menu">
             <ul class="header-menu-ul">
                 <li><a href="#html-container">З чого розпочати?</a></li>
                 <li><a href="#tools-container">Інструменти розробника</a></li>
-                <li><a href="#">Верстаємо веб-сторінку</a></li>
                 <li><a href="#education-container">Корисні ресурси</a></li>
-                <li><a href="#">Контакти</a></li>
             </ul>
+        </div>
+        <div class="header-img">
+            <div class="overlay"></div>
+            <div class="header-text">
+                <h1>
+                    Let's enjoy the website development process
+                </h1>
+                <h4 style="color: orange;">
+                    Основи Front-End розробки як елементу викладання курсу за вибором <br />
+                    <span style="color: white;">"Основи веб-дизайну"</span>
+                </h4>
+                <button type="button" class="btn btn-warning welcome-button" id="welcome"
+                    onclick="Welcome()">WELCOME</button>
+            </div>
         </div>
     </header>
     <main>
         <div class="main-container">
             <div class="html-container" id="html-container">
-                <h1 class="main-container-title">З чого розпочати?</h1>
-                <p> Усі веб-сайти будуються з допомогою мови розмітки HTML та каскадних таблиць стилів CSS.
-                    Обидві мови об’єднуються в професію <i style="color:	#FF69B4">веб-верстальщика</i> -
-                    людини, яка з допомогою HTML та CSS конвертує картинку з Photoshop у сторінку, яку
-                    розуміє веб-браузер та вміє правильно відобразити користувачу. Для динамічності
-                    веб-сайту використовується мова програмування JavaScript.
-                </p>
-                <div class="html-container-cards">
-                    <div class="card" style="width: 18rem;">
-                        <img src="img/html.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">HTML</h5>
-                            <p class="card-text">HTML (Hypertext Markup Language) — це не мова програмування, це мова
-                                розмітки, яка каже вашому
-                                браузеру, як відображати вміст веб-сторінки.</p>
+                <h2 class="main-container-title">З чого розпочати?</h2>
+                <div class="menu-items-body">
+                    <p class="main-container-text">
+                        Усі веб-сайти будуються з допомогою мови розмітки HTML та каскадних таблиць стилів
+                        CSS. Обидві мови об’єднуються в професію
+                        <i style="color: orange"> <br>веб-верстальщика</i> - людини, яка з допомогою HTML та CSS
+                        конвертує картинку з Photoshop у сторінку, яку розуміє веб-браузер та вміє правильно
+                        відобразити користувачу. Для динамічності веб-сайту використовується мова
+                        програмування JavaScript.
+                    </p>
+                    <div class="html-container-cards">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/html.png" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">HTML</h5>
+                                <p class="card-text">
+                                    <b>HTML</b> (Hypertext Markup Language) — це не мова програмування, це мова
+                                    розмітки,
+                                    яка каже вашому браузеру, як відображати вміст веб-сторінки.
+                                </p>
+                            </div>
                             <a href="https://developer.mozilla.org/uk/docs/Learn/Getting_started_with_the_web/HTML_basics#%D0%A9%D0%BE_%D1%82%D0%B0%D0%BA%D0%B5_HTML"
                                 class="btn btn-primary">Детальніше...</a>
                         </div>
-                    </div>
-                    <div class="card" style="width: 18rem;">
-                        <img src="img/css.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">CSS</h5>
-                            <p class="card-text">Cascading Stylesheets (CSS, каскадні таблиці стилів) — це код, що
-                                використовується для стилізації сайту(наприклад: колір тексту, розташування,
-                                позиціонування елементів).</p>
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/css.png" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">CSS</h5>
+                                <p class="card-text">
+                                    <b>Cascading Stylesheets</b> (CSS, каскадні таблиці стилів) — це код, що
+                                    використовується для стилізації сайту(наприклад: колір тексту, розташування,
+                                    позиціонування елементів).
+                                </p>
+                            </div>
                             <a href="https://developer.mozilla.org/uk/docs/Web/CSS"
                                 class="btn btn-primary">Детальніше...</a>
                         </div>
-                    </div>
-                    <div class="card" style="width: 18rem;">
-                        <img src="img/js.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">JavaScript</h5>
-                            <p class="card-text">JavaScript — це мова програмування, яка приносить інтерактивність до
-                                вашого веб-сайту (наприклад: реакція на натиски кнопок,
-                                динамічна зміна стилів, анімація).</p>
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/js.png" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">JavaScript</h5>
+                                <p class="card-text">
+                                    <b>JavaScript</b> — це мова програмування, яка приносить інтерактивність до вашого
+                                    веб-сайту (наприклад: реакція на натиски кнопок, динамічна зміна стилів,
+                                    анімація).
+                                </p>
+                            </div>
                             <a href="https://developer.mozilla.org/uk/docs/Learn/Getting_started_with_the_web/JavaScript_basics"
                                 class="btn btn-primary">Детальніше...</a>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="tools-container" id="tools-container">
-                <h1 class="main-container-title">Інструменти розробника</h1>
-                <p>Щоб розпочати роботу над створенням веб-сайту потрібен браузер і редактор коду.</p>
-                <div id="accordion">
-
-                    <div class="card">
-                        <div class="card-header">
-                            <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                                Середовища розробки
-                            </a>
-                        </div>
-                        <div id="collapseOne" class="collapse show" data-parent="#accordion">
-                            <div class="card-body">
-                                Програми-редактори
-                                <ul>
-                                    <li><a
-                                            href="https://uk.wikipedia.org/wiki/%D0%91%D0%BB%D0%BE%D0%BA%D0%BD%D0%BE%D1%82_(Microsoft)">Блокнот</a>
-                                    </li>
-                                    <li><a href="https://notepad-plus-plus.org/downloads/">Notepad++</a></li>
-                                    <li><a href="https://code.visualstudio.com/docs">Visual Studio Code</a></li>
-                                    <li><a href="https://www.sublimetext.com/">Sublime Text</a></li>
-                                </ul>
-                                Онлайн-сервіси
-                                <img src="img/codepen-live-editor-030513.png" alt="">
-                                <ul>
-                                    <li><a href="https://jsfiddle.net/">JSFiddle</a></li>
-                                    <li><a href="https://codepen.io/">CodePen</a></li>
-                                    <li><a href="https://liveweave.com/">Liveweave</a></li>
-                                </ul>
+                <h2 class="main-container-title">Інструменти розробника</h2>
+                <div class="menu-items-body">
+                    <p class="main-container-text">
+                        Щоб розпочати роботу над створенням веб-сайту потрібен браузер і редактор коду.
+                    </p>
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                    Середовища розробки
+                                </a>
                             </div>
-
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-header">
-                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                                Допоміжні бібліотеки
-                            </a>
-                        </div>
-                        <div id="collapseTwo" class="collapse" data-parent="#accordion">
-                            <div class="card-body">
-                                BootStrap Materialize
+                            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Програми-редактори</p>
+                                    <ul>
+                                        <li>
+                                            <a
+                                                href="https://uk.wikipedia.org/wiki/%D0%91%D0%BB%D0%BE%D0%BA%D0%BD%D0%BE%D1%82_(Microsoft)">Блокнот</a>
+                                        </li>
+                                        <li><a href="https://notepad-plus-plus.org/downloads/">Notepad++</a></li>
+                                        <li><a href="https://code.visualstudio.com/docs">Visual Studio Code</a></li>
+                                        <li><a href="https://www.sublimetext.com/">Sublime Text</a></li>
+                                    </ul>
+                                    <p>Онлайн-сервіси</p>
+                                    <ul>
+                                        <li><a href="https://jsfiddle.net/">JSFiddle</a></li>
+                                        <li><a href="https://codepen.io/">CodePen</a></li>
+                                        <li><a href="https://liveweave.com/">Liveweave</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="card">
-                        <div class="card-header">
-                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-                                Налагодження коду
-                            </a>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                                    Допоміжні бібліотеки
+                                </a>
+                            </div>
+                            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <a href="https://getbootstrap.com/"><img src="img/bootstrap.jpeg" alt="" /></a>
+                                    <a href="https://materializecss.com/"><img src="img/materialize.jpeg" alt="" /></a>
+                                </div>
+                            </div>
                         </div>
-                        <div id="collapseThree" class="collapse" data-parent="#accordion">
-                            <div class="card-body">
-                                <a
-                                    href="https://developer.mozilla.org/uk/docs/%D0%86%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B8">Web
-                                    Developer Tools</a>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                                    Налагодження коду
+                                </a>
+                            </div>
+                            <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <a
+                                        href="https://developer.mozilla.org/uk/docs/%D0%86%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B8">Web
+                                        Developer Tools</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
             <div class="education-container" id="education-container">
-                <h1 class="main-container-title">Корисні ресурси</h1>
-                <a href="https://css.in.ua/html/tags">Довідник по HTML тегам</a>
-                <a href="https://css.in.ua/css/properties">Довідник по CSS властивостям</a>
-                <a href="https://www.w3schools.com/">Зразки коду, приклади, вправи по HTML, CSS, JS, Python</a>
-                <a href="https://courses.prometheus.org.ua/courses/course-v1:LITS+114+2017_T4/about">Онлайн-курс на
-                    Prometheus "Основи
-                    Web UI розробки</a>
-                <a href="https://courses.ed-era.com/courses/course-v1:EDERA_BBF+WEB+2019/about">Онлайн-курс на EdEra
-                    "Основи веб-розробки"</a>
+                <h2 class="main-container-title">Корисні ресурси</h2>
+                <div class="menu-items-body">
+                    <a href="https://css.in.ua/html/tags">Довідник по HTML тегам</a>
+                    <a href="https://css.in.ua/css/properties">Довідник по CSS властивостям</a>
+                    <a href="https://www.w3schools.com/">Зразки коду, приклади, вправи по HTML, CSS, JS, Python</a>
+                    <a href="https://courses.prometheus.org.ua/courses/course-v1:LITS+114+2017_T4/about">Онлайн-курс на
+                        Prometheus "Основи Web UI розробки</a>
+                    <a href="https://courses.ed-era.com/courses/course-v1:EDERA_BBF+WEB+2019/about">Онлайн-курс на EdEra
+                        "Основи веб-розробки"</a>
+                </div>
             </div>
         </div>
     </main>
