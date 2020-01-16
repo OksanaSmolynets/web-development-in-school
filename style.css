@@ -60,8 +60,6 @@ header {
 
 .header-menu-ul {
   display: flex;
-  height: 47px;
-  flex-wrap: wrap;
 }
 
 .header-menu-ul li {
@@ -95,6 +93,10 @@ header {
   display: flex;
   justify-content: space-around;
   color: rgb(70, 53, 42);
+}
+
+.html-container-cards .card {
+  width: 18rem;
 }
 
 .html-container-cards .card a {
@@ -145,6 +147,7 @@ header {
 
 #accordion .card-body ul li {
   list-style: none;
+  margin-top: 10px;
 }
 
 #accordion .card-body ul li a {
@@ -165,6 +168,7 @@ header {
   justify-content: flex-start;
   text-align: center;
   width: 80%;
+  flex-wrap: wrap;
 }
 
 #collapseTwo .card-body {
@@ -224,4 +228,72 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 978px) {
+  .header-text {
+    margin: 100px 20px;
+  }
+
+  .header-menu {
+    position: unset;
+  }
+  .header-menu-ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .header-menu-ul li {
+    border-bottom: 2px solid white;
+    width: 100%;
+    text-align: center;
+  }
+
+  .html-container-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .html-container-cards .card {
+    width: 30rem;
+    margin-bottom: 20px;
+  }
+
+  #accordion {
+    width: 100%;
+  }
+
+  #accordion .card-body ul {
+    width: 100%;
+  }
+
+  #accordion .card-body ul li {
+    margin-top: 10px;
+  }
+  .education-container .menu-items-body {
+    margin: 10px 20px;
+  }
+  .education-container .menu-items-body a {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .header-text {
+    margin: 50px 20px;
+  }
+
+  .html-container-cards .card {
+    width: 20rem;
+  }
+
+  .main-container-text {
+    margin: 10px 20px;
+  }
+
+  .education-container .menu-items-body a {
+    padding: 5px 21px;
+    font-size: 16px;
+  }
 }
