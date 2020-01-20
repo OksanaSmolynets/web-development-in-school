@@ -65,10 +65,8 @@ header {
 
 .facebook {
   right: 10px;
-  margin-right: 0;
   position: absolute;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
